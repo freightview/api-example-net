@@ -1,0 +1,45 @@
+packages
+
+# .NET  #
+bin
+obj
+*.suo
+*.user
+Bin
+ClientBin
+
+#MonoDevelop
+*.userprefs
+*.resources
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pidb
+
+# External Source Control #
+###########################
+*.scc
+*.vspscc
+*.vssscc
+
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+._.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+aspnet_client
+App_Data
