@@ -31,7 +31,7 @@ namespace Freightview.ApiClient
 
 			//Auth header is username:password. For ours use: "api-key:"
 			//You should probably pull this from a secure config
-			//TODO: Change this to use your API credential
+			//TODO: Change this to use your API credential; don't forget the ending `:`
 			var credentials = "14b50208901be261144a8b217e84821b7da835128cb:"; 
 
 			//set the default AUTH header on all calls using this HTTPClient
