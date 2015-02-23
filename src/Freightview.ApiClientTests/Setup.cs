@@ -16,7 +16,6 @@ namespace Freightview.ApiClientTests
 
 			var http = new HttpClient();
 			http.BaseAddress = new Uri("http://10.211.55.2:3001/api/v1/");
-			http.BaseAddress = new Uri("https://www.freightview.com/api/v1/");
 
 			//Auth header is username:password. For ours use: "api-key:"
 			var credentials = "14b50208901be261144a8b217e84821b7da835128cb:"; //pull this from a secure config

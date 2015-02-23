@@ -26,14 +26,16 @@ namespace Freightview.ApiClient
 			//basic boiler plate to setup an HTTP client with authorization headers included automatically
 			var utf8 = new System.Text.UTF8Encoding(false, false);
 			var http = new HttpClient();
-			http.BaseAddress = new Uri("http://10.211.55.2:3001/api/v1/"); //our local dev
-//			http.BaseAddress = new Uri("https://www.freightview.com/api/v1/");
+//			http.BaseAddress = new Uri("http://10.211.55.2:3001/api/v1/"); //our local dev
+			http.BaseAddress = new Uri("https://www.freightview.com/api/v1/");
 
 			//Auth header is username:password. For ours use: "api-key:"
-			var credentials = "14b50208901be261144a8b217e84821b7da835128cb:"; //pull this from a secure config
-			if (!string.IsNullOrWhiteSpace(credentials))
-				//set the default AUTH header on all calls using this HTTPClient
-				http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(utf8.GetBytes(credentials)));
+			//You should probably pull this from a secure config
+			//TODO: Change this to use your API credential
+			var credentials = "14b50208901be261144a8b217e84821b7da835128cb:"; 
+
+			//set the default AUTH header on all calls using this HTTPClient
+			http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(utf8.GetBytes(credentials)));
 
 			//APIClient encapsulates an HttpClient to simplify parsing,serializing JSON to common endpoints. (You could even use dependency injection if you wanted to). 
 			var apiClient = new ApiClient(http);
