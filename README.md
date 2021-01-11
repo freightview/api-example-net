@@ -6,4 +6,4 @@ To test this client, first update the `Program.cs` file with your API credential
 
 Compile and Run (with F5) the app and you should see your rate results for this example quote. 
 
-Refer to the [API Documentation](http://developer.freightview.com/v1.0/docs/rates) for details about what options you can use in fields like `paymentTerms`, `destType`,`originType`, and `charges`.  
+Refer to the [API Documentation](https://developer.freightview.com/#tag/Rating) for details about what options you can use in fields like `paymentTerms`, `destType`,`originType`, and `charges`.  
